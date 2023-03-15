@@ -1,0 +1,9 @@
+<p>dialog works!</p>
+<!-- <button mat-raised-button color="primary" (click)="openDialog('3000ms', '1500ms')"> -->
+  <button mat-raised-button (click)="openDialog()">Open dialog slowly
+  <mat-icon>favorite</mat-icon>
+      My favorite
+</button>
+<br>
+<br>
+<p *ngIf="message">{{message}} </p>

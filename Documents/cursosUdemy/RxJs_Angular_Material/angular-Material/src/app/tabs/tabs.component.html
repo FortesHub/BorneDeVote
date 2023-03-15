@@ -1,0 +1,81 @@
+<h1>Simple Tabs</h1>
+
+<mat-tab-group
+mat-align-tabs="end"
+animationDuration="100ms">
+<!-- mat-align-tabs="start"-->
+<!-- mat-align-tabs="center" -->
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon" >settings</mat-icon>
+      Settings
+    </ng-template>
+    Content 1
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">person</mat-icon>
+      Person
+    </ng-template>
+    Content 2
+  </mat-tab>
+</mat-tab-group>
+<br>
+<hr>
+<h1>Tabs - Stretch anda Below </h1>
+
+<mat-tab-group
+mat-stretch-tabs
+headerPosition="below"
+class="mat-elevation-z4"
+animationDuration="100ms">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon" >settings</mat-icon>
+      Settings
+    </ng-template>
+    content1
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">person</mat-icon>
+      Person
+    </ng-template>
+    Content2
+  </mat-tab>
+</mat-tab-group>
+<br>
+<hr>
+<h1>Tabs - Colors </h1>
+<mat-tab-group
+color="warn"
+backgroundColor="primary"
+headerPosition="below"
+class="mat-elevation-z4"
+animationDuration="100ms">
+  <mat-tab>
+    <div class="mat-tab">
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon" >settings</mat-icon>
+      Settings
+    </ng-template>
+    <h1>Settings</h1>
+ <p>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde modi fugiat dignissimos? Consequuntur vel quisquam iure molestias, distinctio eum ea veritatis adipisci excepturi sit consectetur fugiat, numquam illum sint nisi!
+ </p>
+
+</div>
+  </mat-tab>
+  <mat-tab>
+    <div class="mat-tab">
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">person</mat-icon>
+        Person
+      </ng-template>
+      <h1>Person</h1>
+       <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde modi fugiat dignissimos? Consequuntur vel quisquam iure molestias, distinctio eum ea veritatis adipisci excepturi sit consectetur fugiat, numquam illum sint nisi!
+       </p>
+    </div>
+  </mat-tab>
+</mat-tab-group>

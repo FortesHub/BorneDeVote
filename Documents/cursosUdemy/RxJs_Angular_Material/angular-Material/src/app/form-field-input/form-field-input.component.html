@@ -1,0 +1,46 @@
+<div>
+      <!--si eu utiliso appearance eu desconsidero o floatLabel pois eles não funcionam os dois juntos.-->
+      <!-- para aparecer somente a linha, eu nao devo colocar nada no providers.-->
+      <mat-form-field >
+        <input type="text" matInput placeholder="Name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input type="text" matInput placeholder="Name">
+      </mat-form-field>
+
+      <p>
+        <!--O floatLabel funciona como o mat-label-->
+        <mat-form-field appearance="fill">
+          <mat-label>Fill form field</mat-label>
+          <input type="text" matInput placeholder="Name">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field >
+          <mat-label>Outline form field</mat-label>
+          <input type="text" matInput placeholder="Name">
+          <mat-icon matSuffix>check_circle_outline</mat-icon>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field >
+          <mat-label>Outline form field</mat-label>
+          <input type="text" matInput placeholder="Name" [(ngModel)]="value">
+          <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field >
+          <mat-label>Outline form field</mat-label>
+          <input #userName type="text" matInput placeholder="Name" maxlength="10">
+          <mat-hint align="start">Apenas {{userName.maxLength}} carachteres</mat-hint>
+          <mat-hint align="end">{{userName.value.length}}/10</mat-hint>
+        </mat-form-field>
+      </p>
+
+</div>
